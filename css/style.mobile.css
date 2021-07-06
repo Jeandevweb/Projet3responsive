@@ -1,0 +1,86 @@
+/*   HEADER     */
+
+header {
+    grid-template-columns: 1fr;
+    place-items: center center;
+    line-height:2rem
+}
+
+header ul {
+    flex-direction: column;
+    place-self: stretch;
+}
+
+header a {
+    padding: 0.5rem 0;
+}
+
+header ul li  {
+    padding: 0.2rem;
+    align-self: stretch;
+    text-align: center;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+header ul li:last-child {
+    display: none;
+}
+
+header .logo {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    font-family: 'Staatliches', cursive;
+}
+
+
+ /*   NAV     */
+
+nav {
+    overflow: hidden;
+}
+
+ nav a {
+    padding: 0 1rem;
+}
+
+
+/*    SECTION SHOWCASE    */
+
+
+.showcase {
+    grid-template-columns: 1fr; /* ou repeat(3, 1fr)*/
+    grid-template-rows: auto; /* ou repeat(3, auto)*/
+}
+
+.showcase article:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.showcase article:last-child {
+   display: none;
+}
+
+/*   SECTION ADS   */
+
+.ads {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ads img {
+    display: none;
+}
+
+.ads h1 {
+    font-size: 2rem;
+}
+
+
+/*   SECTION CONTENT   */
+
+.popular {
+display: none;
+}
